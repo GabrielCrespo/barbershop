@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: barbershop
+  datasource:
+    url: jdbc:postgresql://localhost:5432/barbershopdb
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddlAuto: create-drop
