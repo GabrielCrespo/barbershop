@@ -1,4 +1,4 @@
-package br.com.gc.barbershop.dto;
+package br.com.gc.barbershop.dto.client;
 
 import br.com.gc.barbershop.entities.Client;
 

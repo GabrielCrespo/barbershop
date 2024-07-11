@@ -1,7 +1,7 @@
 package br.com.gc.barbershop.controllers;
 
-import br.com.gc.barbershop.dto.ClientRequest;
-import br.com.gc.barbershop.dto.ClientResponse;
+import br.com.gc.barbershop.dto.client.ClientRequest;
+import br.com.gc.barbershop.dto.client.ClientResponse;
 import br.com.gc.barbershop.services.ClientService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

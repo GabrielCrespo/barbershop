@@ -1,7 +1,7 @@
 package br.com.gc.barbershop.services;
 
-import br.com.gc.barbershop.dto.ClientRequest;
-import br.com.gc.barbershop.dto.ClientResponse;
+import br.com.gc.barbershop.dto.client.ClientRequest;
+import br.com.gc.barbershop.dto.client.ClientResponse;
 import br.com.gc.barbershop.entities.Client;
 import br.com.gc.barbershop.repositories.ClientRepository;
 import jakarta.persistence.EntityNotFoundException;
@@ -68,9 +68,8 @@ public class ClientService {
             return ClientResponse.entityToResponse(client);
         } catch (EntityNotFoundException e) {
             LOGGER.error(e.getMessage());
+            throw new EntityNotFoundException("Client not found");
         }
-
-        return null;
 
     }
 
